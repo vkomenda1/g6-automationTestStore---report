@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Nov 20 22:17:04 EET 2023","Mon Nov 20 22:17:13 EET 2023","8732","Root suite","","","","","Order",""
+"passed","Mon Nov 20 22:16:56 EET 2023","Mon Nov 20 22:16:59 EET 2023","2705","Root suite","","","","","Authorization",""
+"passed","Mon Nov 20 22:17:37 EET 2023","Mon Nov 20 22:17:46 EET 2023","8940","Succesfull registration","","","","","Registration",""
+"passed","Mon Nov 20 22:17:46 EET 2023","Mon Nov 20 22:17:47 EET 2023","1335","Succesfull registration","","","","","Authorization",""
