@@ -1,19 +1,25 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Install dependencies') {
             steps {
-                //
+                sh "npm ci"
             }
         }
-        stage('Test') {
+        stage('Cypress run') {
             steps {
-                //
+                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS'){
+                    sh "allure:clear"
+                    sh "cy:run:allure"
+                }
             }
         }
-        stage('Deploy') {
+        stage('Allure report') {
             steps {
-                //
+                sh "allure:generate"
+                allure(
+                    results: [[path: 'allure-results']]
+                )
             }
         }
     }
